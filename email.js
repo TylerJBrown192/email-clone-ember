@@ -1,0 +1,1 @@
+Emailer = Ember.Application.create();

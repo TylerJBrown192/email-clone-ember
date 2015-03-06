@@ -1,0 +1,10 @@
+<h1>Pretend-that-I-have-friends App</h1>
+
+<ul>
+  {{#each email in model}}
+    <li>{{#link-to 'email' email.id}}{{email.subject}}{{/link-to}}</li>
+    <li>Sender: {{email.address}}</li>
+  {{/each}}
+</ul>
+
+{{#link-to 'new-email' classNames="btn btn-success"}}Compose a new Email{{/link-to}}
