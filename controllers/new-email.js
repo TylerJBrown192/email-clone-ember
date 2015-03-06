@@ -7,6 +7,10 @@ Emailer.NewEmailController = Ember.Controller.extend({
         address: this.get('address')
       });
       newEmail.save();
+      var self = this;
+      self.set('subject', "");
+      self.set('body', "");
+      self.set('address', "");
       this.transitionToRoute('emails')
     }
   }

@@ -3,8 +3,10 @@
 <ul>
   {{#each email in model}}
     <li>{{#link-to 'email' email.id}}{{email.subject}}{{/link-to}}</li>
-    <li>Sender: {{email.address}}</li>
+    <ul>
+      <li>Recipient: {{email.address}}</li>
+    </ul>
   {{/each}}
 </ul>
 
-{{#link-to 'new-email' classNames="btn btn-success"}}Compose a new Email{{/link-to}}
+{{#link-to 'new-email' classNames="btn btn-primary"}}Compose a new Email{{/link-to}}

@@ -4,7 +4,7 @@
   <title>Email Clone</title>
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="css/styles.css">
 
   <script src="libs/jquery-1.11.1.js"></script>
   <script src="libs/ember-template-compiler-1.10.0.js"></script>
@@ -19,9 +19,13 @@
 
   <script src="routes/emails.js"></script>
 
+  <script src="controllers/new-email.js"></script>
+
+  <script src="models/email.js"></script>
+
   <script>
     EmberHandlebarsLoader.loadTemplates([
-      'emails'
+      'application', 'emails', 'email', 'new-email'
     ]);
   </script>
 </head>
